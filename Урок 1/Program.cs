@@ -2,7 +2,5 @@
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите целое число b: ");
 int b = Convert.ToInt32(Console.ReadLine());
-Console.Write("a + b = ");
-Console.WriteLine(a+b);
-Console.Write("a - b = ");
-Console.WriteLine(a-b);
+Console.WriteLine($"Сумма a и b равна {a+b}");
+Console.WriteLine($"Разноность a или b равна {a-b}");
