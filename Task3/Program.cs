@@ -1,25 +1,40 @@
-﻿// Написать программу, которая будет выдавать название дня недели по заданному номеру.
+﻿// Написать программу, которая будет выдавать название дня недели по заданному номеру (от 1 до 7).
 
-Console.WriteLine("Hello, World!");
-// double a = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Введите число b = ");
-// double b = Convert.ToDouble(Console.ReadLine());
-// Console.ForegroundColor = ConsoleColor.Green;
-// Console.WriteLine($"Сумма a и b равна {a+b}");
-// Console.WriteLine($"Произведение a и b равно {a*b}");
-// Console.WriteLine($"Частное a и b равно {a/b}");
-// Console.WriteLine($"Сумма a и b, возведённая в квадрат {(a+b)*(a+b)}");
-// Console.WriteLine($"Разность a и b равна {a - b}");
-// Console.WriteLine($"Hi!");
-// Console.WriteLine($"Hi Илья!");
-// Console.ForegroundColor = ConsoleColor.Blue;
-// Console.WriteLine("Hi " + "Ilya");
-// Console.WriteLine($"а = {a:F2} b = {b:F2}");
-// Console.WriteLine($"FF");
-// Console.WriteLine($"FF_01");
-// Console.WriteLine($"CP");
-// Console.WriteLine($"CP2");
-// Console.WriteLine($"CP3");
-// Console.ForegroundColor = ConsoleColor.White;
-// Console.WriteLine($"local");
-// Console.WriteLine($"Amend");
+Console.WriteLine("Введите порядкой номер дня недели (от 1 до 7): ");
+string n = Console.ReadLine();
+Console.ForegroundColor = ConsoleColor.Green;
+switch (n)
+{
+    case "1":
+    Console.Write("Понедельник");
+    break;
+
+    case "2":
+    Console.Write("Вторник");
+    break;
+
+    case "3":
+    Console.Write("Среда");
+    break;
+
+    case "4":
+    Console.Write("Четверг");
+    break;
+        
+    case "5":
+    Console.Write("Пятница");
+    break;
+        
+    case "6":
+    Console.Write("Суббота");
+    break;
+        
+    case "7":
+    Console.Write("Воскресенье");
+    break;
+        
+    default:
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.Write("Выполнен неверный ввод, повторите попытку!");
+    break;
+}
