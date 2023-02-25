@@ -7,12 +7,12 @@
 Console.WriteLine("Введите целое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 if (a > 0)
-{
-    for(int i = -a; i <= a; i++)
     {
-        Console.WriteLine(i + " ");
+        for(int i = -a; i <= a; i++)
+        {
+            Console.Write(i + "__"); // добавили разделитель между числами
+        }
     }
-}
 else
 {
     Console.WriteLine("Число должно быть положительным!");
