@@ -12,10 +12,11 @@ Print(mas);
 int[] Mass(int n)
 {
     int[] array = new int[n];
+    Random ramd = new Random();
 
     for (int i = 0; i < n; i++)
     {
-        array[i] = new Random().Next(0, 2);
+        array[i] = ramd.Next(0, 2);
     }
     return array;
 }
